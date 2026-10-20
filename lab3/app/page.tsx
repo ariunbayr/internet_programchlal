@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { books } from "../data/book";
+import ThemeToggle from "../components/ThemeToggle";
 
 export default function Home() {
   const featured = books.slice(0, 3);
@@ -10,6 +11,8 @@ export default function Home() {
         <p>Уран зохиол, түүх, програмчлалын сонгомол номнууд.</p>
         <Link href="/books" className="btn">Номнууд үзэх</Link>
       </section>
+
+      <ThemeToggle />
 
       <section>
         <h2>Онцлох номнууд</h2>
